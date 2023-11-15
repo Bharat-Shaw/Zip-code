@@ -27,10 +27,10 @@ function PostalDetail() {
                             {postalDetail["post code"]}
                         </p>
                     </div>
-                    <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-5'>
+                    <div className='flex flex-wrap gap-6 mt-5'>
                         {
                             postalDetail.places?.map((place, i) => {
-                                return <div key={i} className='shadow p-6 border border-slate-400 rounded'>
+                                return <div key={i} className='shadow p-6 border border-slate-400 rounded grow'>
                                     <p>
                                         <span className='font-medium'>Latitude: </span>
                                         {place.latitude}
